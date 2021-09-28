@@ -32,13 +32,13 @@ public class Vetro_Class extends Base_Class  {
 	public void test_post() {
 		RestAssured.baseURI="http://localhost:3000";
 		httprequest=RestAssured.given();
-		JSONObject json=new JSONObject();
-		json.put("firstname","Tom");
-		json.put("lastname", "cruse");
-		json.put("subjectId", 1);
+		JSONObject obj=new JSONObject();
+		obj.put("firstname","Tom");
+		obj.put("lastname", "cruse");
+		obj.put("subjectId", 1);
 		
 		httprequest.header("Content-Type","application/json").contentType(ContentType.JSON).accept(ContentType.JSON);
-		httprequest.body(json.toJSONString());
+		httprequest.body(obj.toJSONString());
 		Response 	response=httprequest.request(Method.POST,"http://localhost:3000/users");
 		response.then().statusCode(201).log().all();
 		
