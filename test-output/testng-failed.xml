@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="veteo_LM.Vetro_Class">
+      <class name="TestCases.Delet_emp">
         <methods>
-          <include name="test_put"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- veteo_LM.Vetro_Class -->
+      </class> <!-- TestCases.Delet_emp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

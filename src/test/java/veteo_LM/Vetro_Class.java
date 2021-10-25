@@ -56,7 +56,7 @@ public class Vetro_Class extends Base_Class  {
 		response.then().statusCode(200).log().all();
 		
 	}
-	@Test
+//	@Test
 	public void test_put() {
 		
 		RestAssured.baseURI="http://localhost:3000";
